@@ -19,7 +19,7 @@ plot(t,s) #This plots s in the top panel.
 subplot(212)
 psd(s, 512, fs) #This runs the Fourier Transform.
 axvline(x=k, color = 'red') #Notice that the frequency of the graph sin(2*pi*k*t) is k. 
-#This is why the vertical line is at x = k.
+#This is why the vertical line is at x = k, as the FFT function will have a peak at x=k.
 #to Create the second figure, uncomment the text below
 #xlim([0,10]) #This zooms in on the figure.
 
